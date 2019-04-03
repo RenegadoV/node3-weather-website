@@ -21,7 +21,7 @@ weatherForm.addEventListener('submit', (e) => {
                 else {
                     console.log({data})
                     messageOne.textContent = data.name
-                    messageTwo.textContent = data.summary
+                    messageTwo.textContent = data.summary + 'the current temperature is ' + data.temp + '.'
                 }
             })
         })
